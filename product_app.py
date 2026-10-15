@@ -95,14 +95,16 @@ st.markdown(
     """
     <style>
     /* Main page width and spacing */
+    
     .block-container {
-        max-width: 1500px !important;
-        padding: 3rem 4rem !important;
+    	max-width: 1100px !important;
+    	padding: 1.5rem 2rem !important;
     }
+
 
     /* Increase default typography */
     html, body, [class*="st-"] {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     p, label, li {
