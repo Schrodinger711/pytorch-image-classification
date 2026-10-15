@@ -95,191 +95,187 @@ st.markdown(
     """
     <style>
     /* Main page width and spacing */
-    
     .block-container {
-    	max-width: 1100px !important;
-    	padding: 1.5rem 2rem !important;
+        max-width: 1100px !important;
+        padding: 1.5rem 2rem !important;
     }
 
-
-    /* Increase default typography */
+    /* Compact, readable typography */
     html, body, [class*="st-"] {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
 
     p, label, li {
-        font-size: 1.05rem !important;
-        line-height: 1.7 !important;
+        font-size: 1rem !important;
+        line-height: 1.55 !important;
     }
 
     h1 {
-        font-size: 3rem !important;
+        font-size: 2.4rem !important;
         line-height: 1.15 !important;
     }
 
     h2 {
-        font-size: 2.1rem !important;
+        font-size: 1.8rem !important;
     }
 
     h3 {
-        font-size: 1.6rem !important;
+        font-size: 1.35rem !important;
     }
 
     /* Main hero panel */
     .hero {
-        padding: 3rem !important;
-        border-radius: 24px;
+        padding: 2rem !important;
+        border-radius: 20px;
         border: 1px solid #454b55;
         background: linear-gradient(
             120deg,
             #20251c,
             #151820 75%
         );
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem !important;
     }
 
     .hero-tag {
         color: #c8f169;
-        font-size: 1rem !important;
+        font-size: 0.85rem !important;
         font-weight: 800;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
     }
 
     .hero-title {
         color: #f5f5f5;
-        font-size: 3.8rem !important;
+        font-size: 2.7rem !important;
         font-weight: 850;
         line-height: 1.15;
-        letter-spacing: -1.5px;
-        margin: 1rem 0;
+        letter-spacing: -1px;
+        margin: 0.7rem 0;
     }
 
     .hero-description {
         color: #c5c8d0;
-        font-size: 1.25rem !important;
-        line-height: 1.8;
-        max-width: 950px;
+        font-size: 1.05rem !important;
+        line-height: 1.6;
+        max-width: 850px;
     }
 
     /* Section labels */
-    
     .section-label {
         color: #c8f169;
-        font-size: 0.9rem !important;
+        font-size: 0.8rem !important;
         font-weight: 800;
         letter-spacing: 2px;
         text-transform: uppercase;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
     }
-
-    [data-testid="stFileUploader"] {
-        margin-top: 1.2rem;
-        margin-bottom: 2rem;
-    }
-
-    [data-testid="stImage"] {
-        margin-bottom: 1.5rem;
-    }
-
-    div[data-testid="stExpander"] {
-        margin-top: 1.5rem;
-        border-radius: 14px;
-    }
-
 
     /* Upload box */
     [data-testid="stFileUploader"] {
+        margin-top: 0.5rem !important;
+        margin-bottom: 1rem !important;
         border: 2px dashed #727b59;
-        border-radius: 18px;
-        padding: 1.5rem;
+        border-radius: 14px;
+        padding: 1rem;
         background: rgba(200, 241, 105, 0.04);
     }
 
     [data-testid="stFileUploader"] section {
-        padding: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    [data-testid="stImage"] {
+        margin-bottom: 1rem;
     }
 
     /* Results */
     .result-category {
-        font-size: 3rem !important;
+        font-size: 2.2rem !important;
         font-weight: 850;
         line-height: 1.2;
         overflow-wrap: anywhere;
-        margin: 1rem 0;
+        margin: 0.75rem 0;
     }
 
     .result-label {
         color: #a5a8b5;
-        font-size: 1rem !important;
+        font-size: 0.85rem !important;
         font-weight: 750;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.2px;
         text-transform: uppercase;
     }
 
     .confidence-number {
         color: #c8f169;
-        font-size: 3.5rem !important;
+        font-size: 2.7rem !important;
         font-weight: 850;
-        line-height: 1.3;
+        line-height: 1.2;
     }
 
     .small-note {
         color: #b5b8c2;
-        font-size: 1rem !important;
-        line-height: 1.7;
+        font-size: 0.9rem !important;
+        line-height: 1.55;
     }
 
-    /* Make metrics and progress labels readable */
+    /* Metrics and progress bars */
     [data-testid="stMetricValue"] {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
 
     [data-testid="stProgressBar"] {
-        margin-top: 0.5rem;
-        margin-bottom: 0.7rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    [data-testid="stProgressBar"] > div > div {
+        background-color: #c8f169 !important;
     }
 
     /* About section and footer */
     div[data-testid="stExpander"] {
-        border-radius: 14px;
-        font-size: 1.05rem !important;
+        margin-top: 1rem;
+        border-radius: 12px;
+        font-size: 1rem !important;
     }
 
     .footer {
         text-align: center;
         color: #a5a8b5;
-        font-size: 1rem !important;
-        line-height: 1.8;
-        padding: 2rem 0;
+        font-size: 0.85rem !important;
+        line-height: 1.6;
+        padding: 1.25rem 0;
     }
 
     /* Mobile layout */
     @media (max-width: 768px) {
         .block-container {
-            padding: 1.5rem 1rem !important;
+            padding: 1rem 0.75rem !important;
         }
 
         .hero {
-            padding: 1.5rem !important;
+            padding: 1.25rem !important;
+            border-radius: 16px;
         }
 
         .hero-title {
-            font-size: 2.4rem !important;
+            font-size: 2rem !important;
         }
 
         .hero-description {
-            font-size: 1.05rem !important;
+            font-size: 0.95rem !important;
+        }
+
+        .result-category {
+            font-size: 1.8rem !important;
+        }
+
+        .confidence-number {
+            font-size: 2.2rem !important;
         }
     }
-
-    /* Use the same lime accent for progress bars */
-    [data-testid="stProgressBar"] > div > div {
-        background-color: #c8f169 !important;
-    }
-
     </style>
     """,
     unsafe_allow_html=True,
