@@ -1,0 +1,32 @@
+
+# Python environments
+venv/
+venv313/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Model checkpoints
+*.pth
+
+# Generated product dataset metadata
+product_data.csv
+train.csv
+val.csv
+test.csv
+
+# Local environment and editor files
+.env
+.vscode/
+.idea/
+
+# Local datasets
+data/
+
+# Debugging scripts excluded from GitHub
+check_loader.py
+check_model.py
+check_setup.py
+
+demo.py
